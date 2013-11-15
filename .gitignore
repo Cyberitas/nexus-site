@@ -1,0 +1,5 @@
+.svn
+*.iml
+.vagrant
+target
+atlassian-ide-plugin.xml

@@ -1,0 +1,33 @@
+{
+  "description": "Setup and configure Sonatype Nexus.\n\nhttp://www.sonatype.org/nexus/",
+  "project_page": "http://github.com/hubspotdevops/puppet-nexus",
+  "summary": "Puppet module for Sonatype Nexus",
+  "source": "http://github.com/hubspotdevops/puppet-nexus",
+  "types": [
+
+  ],
+  "dependencies": [
+    {
+      "version_requirement": ">=0",
+      "name": "puppetlabs/stdlib"
+    },
+    {
+      "version_requirement": ">=1.0.0",
+      "name": "maestrodev/wget"
+    }
+  ],
+  "author": "Tom McLaughlin <tmclaughlin@hubspot.com>",
+  "checksums": {
+    "manifests/params.pp": "1b3a3469bb85c186f8b7c28254f8dcdf",
+    "manifests/package.pp": "020dfa26a3ecc024ce1f2364a46ef46c",
+    "manifests/config.pp": "c65af91536251bcd161a260fbaeb2b96",
+    "Modulefile": "35427c562dd5a645053e60a5ba89d945",
+    "README.md": "2decf65666997543b0c3296a4d8430e1",
+    "manifests/init.pp": "89e8d8d7741409229bddf1f68d4c3682",
+    "LICENSE": "0c5d3553d4942536850fcbf0b17c856b",
+    "manifests/service.pp": "021cfb93e50b17fbd87ccacb2dbcbed6"
+  },
+  "version": "1.0.0",
+  "name": "hubspot-nexus",
+  "license": "BSD License"
+}
