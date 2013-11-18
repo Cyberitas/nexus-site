@@ -41,7 +41,11 @@ a [bug](https://bugzilla.redhat.com/show_bug.cgi?id=739860) in the pycurl librar
 #### Work-around
 A new nexus-yum-plugin jar was built from the [Yum plugin source][yum-plugin] with the [--baseurl line][yum-removed-line]
 removed.  This generates a ```repomd.xml``` file without the baseurl and lets yum construct the absolute url with
-username and password params.
+username and password params.  RPMs already in the repo will have to be removed and manually re-added or createrepo will
+need to be run manually to work-around this issue.
+
+#### Bug
+A bug has been filed with Nexus: https://issues.sonatype.org/browse/NEXUS-6122
 
 [Sonatype Nexus]: http://www.sonatype.org/nexus/
 [Vagrant]: http://vagrantup.com
